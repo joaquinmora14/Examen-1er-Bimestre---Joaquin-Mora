@@ -20,7 +20,7 @@ public class FlotaDeTaxis : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (cantididadDeUnidades < 1 || diasTrabajados < 5)
+        if (cantididadDeUnidades < cantidadMinimaDeUnidades || diasTrabajados < cantidadMinimaDeDias)
         {
             Debug.Log("La cantidad ingresada no es valida, el minimo de dias es de 5 y la minima cantidad de unidades es 1");
             return;
